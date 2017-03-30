@@ -1,13 +1,11 @@
-package com.faisal.jaxrs.resources.impl;
+package com.faisal.jaxrs.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
-import com.faisal.jaxrs.resources.DemoResource;
-
 @Path("/hello")
-public class HelloWorld implements DemoResource {
+public class HelloWorld {
 	@GET
 	public String hello() {
 		return "Welcome to JAX-RS!";
